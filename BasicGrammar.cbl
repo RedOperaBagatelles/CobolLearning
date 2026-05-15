@@ -1,4 +1,4 @@
-       IDENTIFICATION DIVISION.
+ï»¿       IDENTIFICATION DIVISION.
        PROGRAM-ID. BASIC-GRAMMAR.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -12,28 +12,28 @@
 
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-           MOVE 10 TO NUM.           *> NUM¿¡ 10À» ´ëÀÔÇÔ
-           MOVE "HELLO" TO MESSAGE.  *> "HELLO"¸¦ MESSAGE¿¡ ÀúÀå
+           MOVE 10 TO NUM.           *> NUMì— 10ì„ ëŒ€ìž…í•¨
+           MOVE "HELLO" TO MESSAGE.  *> "HELLO"ë¥¼ MESSAGEì— ì €ìž¥
 
-           DISPLAY "HELLO WORLD".    *> ¹®ÀÚ¿­ Ãâ·Â
-           DISPLAY NUM.              *> º¯¼ö °ª Ãâ·Â
+           DISPLAY "HELLO WORLD".    *> ë¬¸ìžì—´ ì¶œë ¥
+           DISPLAY NUM.              *> ë³€ìˆ˜ ê°’ ì¶œë ¥
 
-           ACCEPT USER-NAME.         *> »ç¿ëÀÚ·ÎºÎÅÍ ÀÌ¸§À» ¹Þ¾Æµå¸²
+           ACCEPT USER-NAME.         *> ì‚¬ìš©ìžë¡œë¶€í„° ì´ë¦„ì„ ë°›ì•„ë“œë¦¼
            DISPLAY USER-NAME.
 
-           COMPUTE C = A + (B * 2).  *> ÀÏ¹ÝÀûÀÎ °è»ê½ÄÀ» ±¸ÇÔ
+           COMPUTE C = A + (B * 2).  *> ì¼ë°˜ì ì¸ ê³„ì‚°ì‹ì„ êµ¬í•¨
            DISPLAY C.
 
-           ADD A TO B.         *> B¿¡ A¸¦ ´õÇÑ °ªÀ» ÀúÀå
+           ADD A TO B.         *> Bì— Aë¥¼ ë”í•œ ê°’ì„ ì €ìž¥
            DISPLAY B.
 
-           SUBTRACT C FROM A.  *> A¿¡ C¸¦ »« °ªÀ» ÀúÀå
+           SUBTRACT C FROM A.  *> Aì— Cë¥¼ ëº€ ê°’ì„ ì €ìž¥
            DISPLAY A.
 
-           MULTIPLY 3 BY A.    *> A¿¡ 3À» °öÇÑ °ªÀ» ÀúÀå
+           MULTIPLY 3 BY A.    *> Aì— 3ì„ ê³±í•œ ê°’ì„ ì €ìž¥
            DISPLAY A.
 
-           DIVIDE C INTO B.    *> B¸¦ C·Î ³ª´« °á°ú¸¦ B¿¡ ÀúÀå
+           DIVIDE C INTO B.    *> Bë¥¼ Cë¡œ ë‚˜ëˆˆ ê²°ê³¼ë¥¼ Bì— ì €ìž¥
            DISPLAY B.
            STOP RUN.
        END PROGRAM BASIC-GRAMMAR.
