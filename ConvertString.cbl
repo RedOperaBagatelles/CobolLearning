@@ -1,4 +1,4 @@
-       IDENTIFICATION DIVISION.
+ï»¿       IDENTIFICATION DIVISION.
        PROGRAM-ID. CONVERT-STRING.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -12,12 +12,12 @@
 
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-       *> ¹®ÀÚ¿­À» ÇÕÄ¥¶§ »ç¿ë
+       *> ë¬¸ìžì—´ì„ í•©ì¹ ë•Œ ì‚¬ìš©
        STRING
-           "NAME: " DELIMITED BY SPACE   *> °ø¹é Àü±îÁö »ç¿ë
+           "NAME: " DELIMITED BY SPACE   *> ê³µë°± ì „ê¹Œì§€ ì‚¬ìš©
            "KIM"
            ", AGE : "
-           "20" DELIMITED BY SIZE        *> ÀüÃ¼ ¹®ÀÚ¿­ »ç¿ë
+           "20" DELIMITED BY SIZE        *> ì „ì²´ ë¬¸ìžì—´ ì‚¬ìš©
            INTO WS-RESULT1
        END-STRING
 
@@ -25,9 +25,9 @@
 
        MOVE "SHOW ME THE MONEY" TO WS-RESULT5.
 
-       *> ¹®ÀÚ¿­À» Æ¯Â¡ ±¸ºÐÀÚ·Î ºÐ¸®ÇØÁÖ´Â Å°¿öµå
+       *> ë¬¸ìžì—´ì„ íŠ¹ì§• êµ¬ë¶„ìžë¡œ ë¶„ë¦¬í•´ì£¼ëŠ” í‚¤ì›Œë“œ
        UNSTRING WS-RESULT5
-           DELIMITED BY ' ' OR 'O' *> ¿©·¯ ±¸ºÐÀÚµµ °¡´É
+           DELIMITED BY ' ' OR 'O' *> ì—¬ëŸ¬ êµ¬ë¶„ìžë„ ê°€ëŠ¥
            INTO WS-RESULT1
                 WS-RESULT2
                 WS-RESULT3
@@ -42,24 +42,24 @@
        MOVE "HELLO WORLD" TO WS-RESULT1
        MOVE "  HELLO WORLD" TO WS-RESULT2
 
-       *> ¹®ÀÚ¿­À» Á¶»çÇÏ°Å³ª ¼öÁ¤ÇÒ ¶§ »ç¿ë
+       *> ë¬¸ìžì—´ì„ ì¡°ì‚¬í•˜ê±°ë‚˜ ìˆ˜ì •í•  ë•Œ ì‚¬ìš©
        INSPECT WS-RESULT1
-           *> Æ¯Á¤ Å°¿öµå¸¦ «R¾Æ °³¼ö¸¦ Ä«¿îÆÃÇÏ´Â Å°¿öµå
+           *> íŠ¹ì • í‚¤ì›Œë“œë¥¼ ì²®ì•„ ê°œìˆ˜ë¥¼ ì¹´ìš´íŒ…í•˜ëŠ” í‚¤ì›Œë“œ
            TALLYING I-RESULT1 FOR ALL 'O'
-           *> RÀÌ ³ª¿À±â Àü±îÁö Ã³¸®
+           *> Rì´ ë‚˜ì˜¤ê¸° ì „ê¹Œì§€ ì²˜ë¦¬
            BEFORE INITIAL 'R'
 
        DISPLAY I-RESULT1.
 
 
        INSPECT WS-RESULT1
-           *> Æ¯Á¤ Å°¿öµå¸¦ ´Ù¸¥ Å°¿öµå·Î ¹Ù²ãÁÜ
+           *> íŠ¹ì • í‚¤ì›Œë“œë¥¼ ë‹¤ë¥¸ í‚¤ì›Œë“œë¡œ ë°”ê¿”ì¤Œ
            REPLACING ALL 'O' BY 'P'
 
        DISPLAY WS-RESULT1.
 
        INSPECT WS-RESULT2
-           *> ¾Õ¿¡ °ø¹é¸¦ _·Î ±³Ã¼
+           *> ì•žì— ê³µë°±ë¥¼ _ë¡œ êµì²´
            REPLACING LEADING SPACE BY '_'
 
        DISPLAY WS-RESULT2.
